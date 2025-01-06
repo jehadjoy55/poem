@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poem</title>
+  <title>Poem - Night Mode</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -33,6 +34,15 @@
       তোমার হাসিতে আবার<br>
       আমার জীবনের রং ফিরে আসুক।</p>
     </div>
+    <button id="toggle-mode">Toggle Night Mode</button>
   </div>
+
+  <script>
+    const button = document.getElementById('toggle-mode');
+    button.addEventListener('click', () => {
+      document.body.classList.toggle('night-mode');
+    });
+  </script>
 </body>
 </html>
+
